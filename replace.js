@@ -1,4 +1,4 @@
-if ($request.method === 'OPTION') {
+if ($request.method === 'OPTIONS') {
     $done({})
     return
 }
