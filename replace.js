@@ -1,8 +1,11 @@
 console.log($request.method, $request.url)
 
-if ($request.method === 'OPTIONS') {
-    $done({})
-}
+// if ($request.method === 'OPTIONS') {
+//     $done({})
+// }
+
+$done({})
+return
 
 let url = ''
 url = $request.url
