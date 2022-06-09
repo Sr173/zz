@@ -42,6 +42,7 @@ if (url.indexOf('vaccine/find') !== -1) {
     $done({ body })
     return
 } else if (url.indexOf('acid/find') !== -1) {
+    console.log('replace body acid find')
     let now = (new Date().getTime())
     let sampleTimestamp = now - 1000 * 60 * 60 * 8
     let body = JSON.stringify({
@@ -53,7 +54,7 @@ if (url.indexOf('vaccine/find') !== -1) {
             "acidResult": "阴性",
             "idCard": "411101199701026833",
             "sysTimeStamp": now,
-            "timeDesc": ""
+            "timeDesc": "48h"
         },
         "success": true,
         "date": null,
