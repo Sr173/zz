@@ -40,7 +40,7 @@ if (url.indexOf('vaccine/find') !== -1) {
     })
 
     $done({ body })
-} else if (url.indexOf('acid/find11111111111111111111') !== -1) {
+} else if (url.indexOf('acid/find') !== -1) {
     let now = (new Date().getTime())
     let sampleTimestamp = now - 1000 * 60 * 60 * 8
     let body = JSON.stringify({
