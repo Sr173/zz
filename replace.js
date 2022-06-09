@@ -5,6 +5,7 @@
 let url = ''
 url = $request.url
 
+console.log(`[body] url: ${url.indexOf('vaccine/find')}, ${url.indexOf('acid/find')}`)
 
 Date.prototype.Format = fmt => {
     var o = {
