@@ -40,6 +40,7 @@ if (url.indexOf('vaccine/find') !== -1) {
     })
 
     $done({ body })
+    return
 } else if (url.indexOf('acid/find') !== -1) {
     let now = (new Date().getTime())
     let sampleTimestamp = now - 1000 * 60 * 60 * 8
@@ -63,6 +64,7 @@ if (url.indexOf('vaccine/find') !== -1) {
     })
 
     $done({ body })
+    return
 } else if (url.indexOf('/getPersonTag') !== -1) {
     let body = JSON.stringify({
         "errMsg": "SUCCESS",
@@ -74,6 +76,7 @@ if (url.indexOf('vaccine/find') !== -1) {
     });
 
     $done({ body })
+    return
 }
 
 
