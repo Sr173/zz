@@ -1,12 +1,12 @@
+console.log($request.method, $request.url)
+
 if ($request.method === 'OPTIONS') {
     $done({})
-    return
 }
 
 let url = ''
 url = $request.url
 
-console.log(url)
 
 Date.prototype.Format = fmt => {
     var o = {
