@@ -1,9 +1,3 @@
-console.log($request.method, $request.url)
-
-// if ($request.method === 'OPTIONS') {
-//     $done({})
-// }
-
 $done({})
 return
 
