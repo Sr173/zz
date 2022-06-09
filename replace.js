@@ -1,3 +1,4 @@
+console.log($request.method, $request.url)
 $done({})
     // return
 
