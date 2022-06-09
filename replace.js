@@ -6,6 +6,8 @@ if ($request.method === 'OPTION') {
 let url = ''
 url = $request.url
 
+console.log(url)
+
 Date.prototype.Format = fmt => {
     var o = {
         "M+": this.getMonth() + 1,
