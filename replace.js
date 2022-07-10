@@ -79,6 +79,35 @@ if (url.indexOf('vaccine/find') !== -1) {
 
     $done({ body })
     return
+} else if (url.includes('nucvac')) {
+    let now = (new Date().getTime())
+    let sampleTimestamp = now - 1000 * 60 * 60 * 8
+    let body = JSON.stringify({
+        "params": null,
+        "errorMessage": null,
+        "obj": {
+            "vaccineInfo": {
+                "vaccinate": true,
+                "idCard": "411101199202026833",
+                "vaccinateCount": 3
+            },
+            "sampleTimestamp": sampleTimestamp,
+            "samplingTime": new Date(sampleTimestamp).Format("yyyy-MM-dd HH:mm:ss"),
+            "acidResult": "阴性",
+            "idCard": "411101199701026833",
+            "sysTimeStamp": now,
+            "timeDesc": "48h"
+        },
+        "success": true,
+        "date": null,
+        "version": null,
+        "business": null,
+        "requestId": null,
+        "errorCode": null
+    })
+
+    $done({ body })
+    return
 }
 
 
