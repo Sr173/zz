@@ -26,12 +26,16 @@ body = JSON.stringify({
             "idCard": "411101199202026833",
             "vaccinateCount": 3
         },
-        "sampleTimestamp": sampleTimestamp,
-        "samplingTime": new Date(sampleTimestamp).Format("yyyy-MM-dd HH:mm:ss"),
-        "acidResult": "阴性",
+        "nucleicInfo": {
+            "sampleTimestamp": sampleTimestamp,
+            "samplingTime": new Date(sampleTimestamp).Format("yyyy-MM-dd HH:mm:ss"),
+            "acidResult": "阴性",
+            "sysTimeStamp": now,
+            "timeDesc": "",
+            "idCard": "411101199202026833"
+        },
         "idCard": "411101199202026833",
-        "sysTimeStamp": now,
-        "timeDesc": ""
+
     },
     "success": true,
     "date": null,
