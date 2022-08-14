@@ -35,7 +35,8 @@ body = JSON.stringify({
             "sysTimeStamp": now,
             "timeDesc": "",
             "idCard": "411101199202026833",
-            "expireTime": expireTimestamp
+            "expireTime": new Date(expireTimestamp).Format("yyyy-MM-dd HH:mm:ss"),
+            "source": "0"
         },
         "idCard": "411101199202026833",
 
