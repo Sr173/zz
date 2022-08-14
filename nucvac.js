@@ -16,7 +16,7 @@ Date.prototype.Format = function(fmt) {
 
 let now = (new Date().getTime())
 let sampleTimestamp = now - 1000 * 60 * 60 * 8
-let expireTimestamp = now + 1000 * 60 * 60 * 8
+let expireTimestamp = now + 1000 * 60 * 60 * 48
 
 body = JSON.stringify({
     "params": null,
