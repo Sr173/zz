@@ -16,13 +16,13 @@ Date.prototype.Format = function(fmt) {
 
 let now = (new Date().getTime())
 let sampleTimestamp = now - 1000 * 60 * 60 * 8
-let expireTimestamp = now + 1000 * 60 * 60 * 48
+let expireTimestamp = sampleTimestamp + 1000 * 60 * 60 * 48
 
 body = JSON.stringify({
     "params": null,
     "errorMessage": null,
     "obj": {
-        "expireFlag": true,
+        "expireFlag": false,
         "vaccineInfo": {
             "vaccinate": true,
             "idCard": "410482199803155051",
