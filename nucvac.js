@@ -16,7 +16,7 @@ Date.prototype.Format = function(fmt) {
 
 let now = (new Date().getTime())
 let sampleTimestamp = now - 1000 * 60 * 60 * 8
-let expireTimestamp = sampleTimestamp + 1000 * 60 * 60 * 48
+let expireTimestamp = sampleTimestamp + 1000 * 60 * 60 * 60
 
 // body = JSON.stringify({
 //     "params": null,
@@ -57,20 +57,21 @@ body = JSON.stringify({
     "obj": {
         "expireFlag": false,
         "vaccineInfo": {
-            "vaccinate": false,
-            "vaccinateCount": 0
+            "vaccinate": true,
+            "idCard": "410482199803155051",
+            "vaccinateCount": 3
         },
         "idCard": "410482199803155051",
         "nucleicInfo": {
             "acidResult": "阴性",
             "source": "0",
             "idCard": "410482199803155051",
-            "sampleTimestamp": 1659667501000,
-            "sysTimeStamp": 1660486190801,
-            "expireTimeStamp": 1659883501000,
+            "sampleTimestamp": sampleTimestamp,
+            "sysTimeStamp": now,
+            "expireTimeStamp": expireTimestamp,
             "expireHour": 48,
-            "samplingTime": "2022-08-05 10:45:01",
-            "expireTime": "2022-08-07 22:45:01",
+            "samplingTime": new Date(sampleTimestamp).Format("yyyy-MM-dd HH:mm:ss"),
+            "expireTime": new Date(expireTimestamp).Format("yyyy-MM-dd HH:mm:ss"),
             "timeDesc": ""
         }
     },
