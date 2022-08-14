@@ -29,7 +29,7 @@ body = JSON.stringify({
         },
         "nucleicInfo": {
             "sampleTimestamp": sampleTimestamp,
-            "expireTimestamp": expireTimestamp,
+            "expireTimeStamp": expireTimestamp,
             "samplingTime": new Date(sampleTimestamp).Format("yyyy-MM-dd HH:mm:ss"),
             "acidResult": "阴性",
             "sysTimeStamp": now,
