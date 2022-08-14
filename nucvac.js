@@ -25,7 +25,7 @@ body = JSON.stringify({
         "expireFlag": true,
         "vaccineInfo": {
             "vaccinate": true,
-            "idCard": "411101199202026833",
+            "idCard": "410482199803155051",
             "vaccinateCount": 3
         },
         "nucleicInfo": {
@@ -35,12 +35,12 @@ body = JSON.stringify({
             "acidResult": "阴性",
             "sysTimeStamp": now,
             "timeDesc": "",
-            "idCard": "411101199202026833",
+            "idCard": "410482199803155051",
             "expireTime": new Date(expireTimestamp).Format("yyyy-MM-dd HH:mm:ss"),
             "source": "0",
             "expireHour": 48
         },
-        "idCard": "411101199202026833",
+        "idCard": "410482199803155051",
 
     },
     "success": true,
