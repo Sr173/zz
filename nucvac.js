@@ -16,6 +16,7 @@ Date.prototype.Format = function(fmt) {
 
 let now = (new Date().getTime())
 let sampleTimestamp = now - 1000 * 60 * 60 * 8
+let expireTimestamp = now + 1000 * 60 * 60 * 8
 
 body = JSON.stringify({
     "params": null,
@@ -28,11 +29,13 @@ body = JSON.stringify({
         },
         "nucleicInfo": {
             "sampleTimestamp": sampleTimestamp,
+            "expireTimestamp": expireTimestamp,
             "samplingTime": new Date(sampleTimestamp).Format("yyyy-MM-dd HH:mm:ss"),
             "acidResult": "阴性",
             "sysTimeStamp": now,
             "timeDesc": "",
-            "idCard": "411101199202026833"
+            "idCard": "411101199202026833",
+            "expireTime": expireTimestamp
         },
         "idCard": "411101199202026833",
 
