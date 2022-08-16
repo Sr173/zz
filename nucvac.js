@@ -55,7 +55,7 @@ body = JSON.stringify({
     "params": null,
     "errorMessage": null,
     "obj": {
-        "expireFlag": true,
+        "expireFlag": false,
         "vaccineInfo": {
             "vaccinate": true,
             "idCard": "410482199803155051",
