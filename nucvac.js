@@ -72,7 +72,7 @@ body = JSON.stringify({
             "expireHour": 48,
             "samplingTime": new Date(sampleTimestamp).Format("yyyy-MM-dd HH:mm:ss"),
             "expireTime": new Date(expireTimestamp).Format("yyyy-MM-dd HH:mm:ss"),
-            "timeDesc": ""
+            "timeDesc": "24"
         }
     },
     "success": true,
